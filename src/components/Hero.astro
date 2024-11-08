@@ -6,7 +6,9 @@
     class="max-w-5xl mx-auto px-3 lg:px-0 pt-10 flex flex-col md:flex-row items-center justify-between"
 >
     <div class="w-full md:w-1/2 h-auto space-y-10">
-        <span id="typing" class="text-3xl md:text-5xl inline-flex"></span>
+        <div class="w-full h-14">
+            <span id="typing" class="text-4xl md:text-5xl"></span>
+        </div>
         <p class="text-2xl md:text-3xl">
             Desarrollando software a medida para el cliente
         </p>
@@ -166,9 +168,9 @@
     const exampleText = ["<teyu/>"];
     const exampleTyping = new AutoTyping("#typing", exampleText, {
         typeSpeed: 200,
-        deleteSpeed: 100,
-        waitBeforeDelete: 2000,
-        waitBetweenWords: 500,
+        deleteSpeed: 50, // Velocidad de borrado más rápida
+        waitBeforeDelete: 1500, // Ajusta el tiempo de espera antes de borrar
+        waitBetweenWords: 700, // Pequeña pausa entre palabras para mejorar la fluidez
     });
     exampleTyping.start();
 </script>
