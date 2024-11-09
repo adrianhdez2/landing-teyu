@@ -7,12 +7,12 @@ const { question, answer } = Astro.props as Question;
 
 <details>
     <summary
-        class="flex items-center rounded-t-sm justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-white/10 bg-[#25252591] gap-3 cursor-pointer"
+        class="flex items-center rounded-t-sm justify-between w-full p-5 font-medium rtl:text-right border border-b-0 border-white/10 bg-[#25252591] gap-3 cursor-pointer backdrop-blur-sm"
     >
         <span class="text-sm">{question}</span>
         <LineIcon />
     </summary>
-    <div class="">
+    <div class="backdrop-blur-sm">
         <div class="p-5 border border-white/10">
             <p class="mb-2 text-sm">
                 {answer}
