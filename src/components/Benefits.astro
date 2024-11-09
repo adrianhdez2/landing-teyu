@@ -3,9 +3,14 @@ import CardBenefit from "@components/CardBenefit.astro";
 import { ITEMS_BENEFITS } from "./utils/data";
 ---
 
-<section
-    class="max-w-5xl mx-auto flex flex-col px-3 py-36 items-center gap-y-14 md:gap-y-12"
->
+<section class="max-w-5xl mx-auto flex flex-col px-3 py-36 items-center">
     <h2 class="mb-12 text-lg">Por qué le encantará</h2>
     {ITEMS_BENEFITS.map((item) => <CardBenefit {...item} />)}
+
+    <span class="pl-5 border-l-4 border-white text-gray-300">
+        En Teyu, no solo desarrollamos software, desarrollamos soluciones que
+        hacen crecer tu negocio, protegen tus datos y ponen a tus clientes en
+        primer lugar. Permítenos mostrarte cómo podemos hacer la diferencia en
+        tu próxima iniciativa digital.
+    </span>
 </section>
