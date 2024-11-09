@@ -1,0 +1,34 @@
+---
+interface Props {
+    img: string;
+    tag: string;
+    title: string;
+    description: string;
+    direction: string;
+}
+
+const { img, title, description, tag, direction } = Astro.props;
+---
+
+<article
+    class={`flex flex-col ${direction == "left" ? "md:flex-row" : "md:flex-row-reverse"} group`}
+>
+    <div class="w-full md:w-1/2 flex justify-center">
+        <div class="w-full overflow-clip rounded-xl">
+            <img
+                src={`/img/${img}`}
+                alt=""
+                class="w-full h-full object-contain transition duration-500 group-hover:scale-105"
+            />
+        </div>
+    </div>
+    <div
+        class={`w-full md:w-1/2 flex flex-col items-start gap-y-8 mt-8 md:mt-0 ${direction == "left" ? "md:ml-10" : "md:mr-10"}`}
+    >
+        <small class="text-gray-300">{tag}</small>
+        <p class="text-xl">{title}</p>
+        <p class="text-sm text-gray-300 leading-normal text-pretty">
+            {description}
+        </p>
+    </div>
+</article>
