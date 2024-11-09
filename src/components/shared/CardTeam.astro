@@ -5,7 +5,7 @@ const { name, rol, experience, image } = Astro.props as Team;
 ---
 
 <article
-    class="w-full max-w-[500px] hover:bg-[#252525] rounded-md p-3 cursor-pointer mx-auto flex h-64 md:h-52 bg-[#25252591] transition duration-300 backdrop-blur-sm"
+    class="w-full max-w-[500px] rounded-md p-3 cursor-pointer mx-auto flex h-64 md:h-52 transition duration-300 backdrop-blur-sm border border-white/10 hover:bg-[#25252591]"
 >
     <div class="w-1/4 h-full flex items-center justify-center">
         <img
@@ -14,7 +14,6 @@ const { name, rol, experience, image } = Astro.props as Team;
             class="w-full h-full aspect-square object-contain"
         />
     </div>
-    <!-- <hr class="border-gray-400/10 my-3" /> -->
     <div class="w-3/4 h-full flex flex-col justify-evenly px-5">
         <p class="text-lg">{name}</p>
         <p class="text-sm text-gray-300">{rol}</p>
