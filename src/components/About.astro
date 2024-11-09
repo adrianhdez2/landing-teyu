@@ -1,15 +1,14 @@
 ---
 import Card from "@components/shared/Card.astro";
 import { ITEMS_ABOUT } from "@utils/data";
+import ContainerSection from "@components/shared/ContainerSection.astro";
 ---
 
-<section
-    class="max-w-5xl mx-auto flex flex-col px-3 py-16 md:py-36 items-center"
->
+<ContainerSection>
     <h3 class="mb-12 text-lg">Esto es para ti, si eres…</h3>
     <div
         class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
     >
         {ITEMS_ABOUT.map((item) => <Card {...item} />)}
     </div>
-</section>
+</ContainerSection>
