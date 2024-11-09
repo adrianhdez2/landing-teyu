@@ -30,3 +30,8 @@ export interface Experience {
     title: string;
     description: string;
 }
+
+export interface Question {
+    question: string;
+    answer: string;
+}

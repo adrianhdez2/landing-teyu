@@ -1,4 +1,4 @@
-import type { About, Benefit, Team } from "./types";
+import type { About, Benefit, Question, Team } from "./types";
 
 export const ITEMS_ABOUT: About[] = [
     {
@@ -243,5 +243,20 @@ export const TEAM_INTEGRANTS: Team[] = [
                 description: 'Finalizó la especialización en fundamentos de AWS, adquiriendo conocimientos esenciales sobre los servicios de nube de AWS y su aplicación práctica. Certificado obtenido el 9 de enero de 2024.'
             }
         ]
+    }
+]
+
+export const DATA_QUESTIONS: Question[] = [
+    {
+        question: '¿Por qué debería confiar en nuestros servicios?',
+        answer: 'Nos enfocamos en ofrecer soluciones de alta calidad y nos dedicamos a entender las necesidades de cada cliente. Nuestra experiencia y compromiso nos permiten crear productos que realmente impactan y ayudan a nuestros clientes a alcanzar sus objetivos.',
+    },
+    {
+        question: '¿Qué tipos de soporte ofrecen?',
+        answer: 'Nuestro equipo está disponible para ayudarte en cada paso del proceso. Ofrecemos soporte técnico, consultas personalizadas y seguimiento continuo para garantizar que obtengas los mejores resultados posibles.',
+    },
+    {
+        question: '¿Cómo garantizan la actualización constante de sus servicios?',
+        answer: 'Estamos comprometidos con la innovación. Implementamos mejoras y actualizaciones continuas para mantener nuestros servicios y productos alineados con las últimas tendencias y avances tecnológicos.',
     }
 ]
