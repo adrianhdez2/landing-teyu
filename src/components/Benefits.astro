@@ -3,7 +3,9 @@ import CardBenefit from "@components/shared/CardBenefit.astro";
 import { ITEMS_BENEFITS } from "@utils/data";
 ---
 
-<section class="max-w-5xl mx-auto flex flex-col px-3 py-36 items-center">
+<section
+    class="max-w-5xl mx-auto flex flex-col px-3 py-16 md:py-36 items-center"
+>
     <h2 class="mb-12 text-lg">Por qué le encantará</h2>
     {ITEMS_BENEFITS.map((item) => <CardBenefit {...item} />)}
 

@@ -11,3 +11,22 @@ export interface Benefit {
     description: string;
     direction: 'left' | 'right'
 }
+
+export interface Team {
+    image: string;
+    name: string;
+    rol: string;
+    experience: string;
+    about: string;
+    starred_experience: Experience[];
+    skills: Experience[];
+    certifications?: Experience[];
+    records?: Experience[];
+    new_oportunities?: Experience[];
+    events?: Experience[];
+}
+
+export interface Experience {
+    title: string;
+    description: string;
+}

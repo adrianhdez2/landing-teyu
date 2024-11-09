@@ -1,0 +1,24 @@
+---
+import { TEAM_INTEGRANTS } from "@utils/data";
+import CardTeam from "./shared/CardTeam.astro";
+---
+
+<section
+    class="max-w-5xl mx-auto flex flex-col px-3 py-16 md:py-36 items-center"
+>
+    <div class="mb-12">
+        <h2 class="text-lg mb-4">
+            Formado por el mejor equipo de desarrolladores
+        </h2>
+        <p class="text-xs">
+            Con nuestro equipo, puedes estar seguro de que estás en buenas
+            manos. Nos dedicamos a crear aplicaciones funcionales, atractivas y
+            personalizadas que te permitirán destacarte en tu mercado y crecer
+            en la dirección correcta.
+        </p>
+        <hr class="w-full border-gray-400/10 my-3" />
+    </div>
+    <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {TEAM_INTEGRANTS.map((item) => <CardTeam {...item} />)}
+    </div>
+</section>

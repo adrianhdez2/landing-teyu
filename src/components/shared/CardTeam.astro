@@ -1,0 +1,23 @@
+---
+import type { Team } from "@utils/types";
+
+const { name, rol, experience, image } = Astro.props as Team;
+---
+
+<article
+    class="w-full max-w-[500px] hover:bg-[#252525] rounded-md p-3 cursor-pointer mx-auto flex h-64 md:h-52 bg-[#25252591] transition duration-300"
+>
+    <div class="w-1/4 h-full flex items-center justify-center">
+        <img
+            src={`/img/team/${image}`}
+            alt=""
+            class="w-full h-full aspect-square object-contain"
+        />
+    </div>
+    <!-- <hr class="border-gray-400/10 my-3" /> -->
+    <div class="w-3/4 h-full flex flex-col justify-evenly px-5">
+        <p class="text-lg">{name}</p>
+        <p class="text-sm text-gray-300">{rol}</p>
+        <p class="text-sm text-gray-300">{experience}</p>
+    </div>
+</article>
