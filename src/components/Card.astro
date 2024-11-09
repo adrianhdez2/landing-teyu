@@ -17,6 +17,7 @@ const { title, description, img } = Astro.props;
 		width="48"
 		height="48"
 		class="aspect-square object-contain"
+		loading="lazy"
 	/>
 	<p class="mb-4 mt-2 text-sm">{title}</p>
 	<p class="text-gray-400 text-sm leading-normal">{description}</p>
