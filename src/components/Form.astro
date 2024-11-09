@@ -1,0 +1,59 @@
+---
+import ContainerSection from "@components/shared/ContainerSection.astro";
+---
+
+<ContainerSection>
+    <div class="mb-12 w-full text-center">
+        <h2 class="text-xl mb-4">Contacto</h2>
+        <p class="text-sm">
+            ¿Tienes preguntas o necesitas más información? ¡Contáctanos!
+        </p>
+    </div>
+    <div class="w-full md:w-1/2">
+        <form class="space-y-6" action="#" method="POST">
+            <div>
+                <label for="email" class="block text-sm/6 font-medium"
+                    >Correo electrónico:</label
+                >
+                <div class="mt-2">
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required
+                        placeholder="Escribe tu correo..."
+                        class="block px-2 w-full rounded-md border-0 py-1.5 shadow-sm bg-[#252525] placeholder:text-white/20 sm:text-sm/6"
+                    />
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center justify-between">
+                    <label for="password" class="block text-sm/6 font-medium"
+                        >Teléfono:</label
+                    >
+                </div>
+                <div class="mt-2">
+                    <input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        autocomplete="current-phone"
+                        required
+                        placeholder="Escribe tu teléfono..."
+                        class="block px-2 w-full rounded-md border-0 py-1.5 shadow-sm bg-[#252525] placeholder:text-white/20 sm:text-sm/6"
+                    />
+                </div>
+            </div>
+
+            <div>
+                <button
+                    type="submit"
+                    class="flex w-full justify-center rounded-md px-3 py-1.5 text-sm/6 font-semibold shadow-sm bg-transparent border border-white hover:bg-white hover:text-black transition duration-300"
+                    >Contactar</button
+                >
+            </div>
+        </form>
+    </div>
+</ContainerSection>
