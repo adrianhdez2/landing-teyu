@@ -1,12 +1,14 @@
 ---
 interface Props {
     className?: string;
+    id?: string;
 }
 
-const { className } = Astro.props;
+const { className, id } = Astro.props;
 ---
 
 <section
+    id={id}
     class:list={[
         "max-w-5xl mx-auto flex flex-col px-3 py-16 md:py-32 items-center",
         className,
