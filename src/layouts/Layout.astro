@@ -5,16 +5,39 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const canonicalURL = "https://landing-teyu.vercel.app/";
+const description =
+	"Somos un grupo de desarrolladores 100% originarios de la Chontalpa, nuestro nombre proviene proviene de “tey”, palabra chontal que hace referencia a algo valioso o significativo. Siendo el cliente nuestra prioridad, creando soluciones que importen y perduren.";
+const image = "https://landing-teyu.vercel.app/teyu-logo.png";
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta property="og:description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalURL} />
+		<meta
+			name="keywords"
+			content="programacion, software, developer, dev, development, app, web, astro, webdev, landing "
+		/>
+
+		<meta property="og:image" content={new URL(image, Astro.url)} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:site_name" content="teyu" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+
+		<link rel="apple-touch-icon" href={image} />
+
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+
 		<title>{title}</title>
 	</head>
 	<body>
