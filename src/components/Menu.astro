@@ -1,0 +1,73 @@
+---
+interface Props {
+    className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<span
+    class:list={[
+        "z-10 fixed bottom-0 w-full bg-white/10 backdrop-blur-xl h-dvh items-end hidden justify-center md:hidden",
+        className,
+    ]}
+    id="navbar-mobile"
+>
+    <nav
+        class="w-full h-1/2 bg-zinc-900 rounded-t-3xl border-t-2 border-white/80 slider-up"
+    >
+        <ul
+            class="w-full h-full flex items-center justify-evenly flex-col [&>li]:text-base"
+        >
+            <li class="active:underline">
+                <a href="#home">Inicio</a>
+            </li>
+            <li class="active:underline">
+                <a href="#colaborations">Colaboraciones</a>
+            </li>
+            <li class="active:underline"><a href="#team">Equipo</a></li>
+            <li class="active:underline"><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+</span>
+
+<style>
+    .slider-up {
+        transform: translateY(100%);
+        animation: slide-up 0.5s forwards;
+    }
+
+    .slider-down {
+        animation: slider-down 0.5s forwards;
+    }
+
+    @keyframes slide-up {
+        from {
+            transform: translateY(100%);
+        }
+
+        to {
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes slider-down {
+        from {
+            transform: translateY(0%);
+        }
+
+        to {
+            transform: translateY(100%);
+        }
+    }
+</style>
+
+<script type="module" defer is:inline>
+    import { showHiddeMenu } from "/js/menu.js";
+
+    const items_nav = document.querySelectorAll("li a");
+
+    items_nav.forEach((item) => {
+        item.addEventListener("click", showHiddeMenu);
+    });
+</script>
