@@ -1,4 +1,9 @@
 ---
+import HandsIcon from "@components/icons/HandsIcon.astro";
+import HomeIcon from "@components/icons/HomeIcon.astro";
+import QuestionIcon from "@components/icons/QuestionIcon.astro";
+import UsersIcon from "@components/icons/UsersIcon.astro";
+
 interface Props {
     className?: string;
 }
@@ -17,16 +22,44 @@ const { className } = Astro.props;
         class="w-full h-1/2 bg-zinc-900 rounded-t-3xl border-t-2 border-white/80 slider-up"
     >
         <ul
-            class="w-full h-full flex items-center justify-evenly flex-col [&>li]:text-base"
+            class="w-full h-full flex items-center justify-evenly flex-col [&>li]:text-base [&>li]:w-full"
         >
-            <li class="active:underline">
-                <a href="#home">Inicio</a>
+            <li class="active:underline group">
+                <a
+                    class="flex py-3 items-center justify-center gap-x-2"
+                    href="#home"
+                >
+                    <HomeIcon class="size-5" />
+                    Inicio</a
+                >
             </li>
             <li class="active:underline">
-                <a href="#colaborations">Colaboraciones</a>
+                <a
+                    class="flex py-3 items-center justify-center gap-x-2"
+                    href="#colaborations"
+                >
+                    <HandsIcon class="size-5" />
+                    Colaboraciones</a
+                >
             </li>
-            <li class="active:underline"><a href="#team">Equipo</a></li>
-            <li class="active:underline"><a href="#faq">FAQ</a></li>
+            <li class="active:underline">
+                <a
+                    class="flex py-3 items-center justify-center gap-x-2"
+                    href="#team"
+                >
+                    <UsersIcon class="size-5" />
+                    Equipo</a
+                >
+            </li>
+            <li class="active:underline">
+                <a
+                    class="flex py-3 items-center justify-center gap-x-2"
+                    href="#faq"
+                >
+                    <QuestionIcon class="size-5" />
+                    FAQ</a
+                >
+            </li>
         </ul>
     </nav>
 </span>
