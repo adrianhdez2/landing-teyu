@@ -117,55 +117,55 @@ export const TEAM_INTEGRANTS: Team[] = [
             }
         ]
     },
-    {
-        image: 'paola.webp',
-        name: 'Ashairy Paola Bolívar Zamudio',
-        rol: 'Desarrolladora Frontend y Analista de Datos.',
-        experience: '2 años de experiencia.',
-        about: 'Ashairy es estudiante de la Licenciatura en Ciencias Computacionales en la UJAT. Con un profundo interés en las nuevas tecnologías, su enfoque se centra en áreas como la inteligencia artificial, la programación y el desarrollo de software. Considera que su carrera le ofrece un campo lleno de desafíos que la motivan a aprender y avanzar profesionalmente.',
-        starred_experience: [
-            {
-                title: 'Desarrollo de Modelos Químicos',
-                description: 'Trabajó en el desarrollo de modelos de estructuras químicas utilizando tecnologías de diseño y fabricación asistida por computadora (CAD/CAM) con Fusion 360 de Autodesk, bajo la supervisión de la M.T. María Hortensia Almaguer Cantú.'
-            },
-            {
-                title: 'Base de Datos y Desarrollo de Software',
-                description: 'Colaboró en el desarrollo de una base de datos en SQL Server y en un programa en C# para el control, seguimiento y gestión de permisos, en conjunto con el Lic. Alejandro Rueda.'
-            }
-        ],
-        skills: [
-            {
-                title: 'Programación',
-                description: 'Conocimiento en lenguajes y tecnologías para el desarrollo de software.'
-            },
-            {
-                title: 'Modelación y CAD/CAM',
-                description: 'Dominio en herramientas como Fusion 360.'
-            },
-            {
-                title: 'Edición de videos',
-                description: 'Competencia en software de edición para proyectos académicos y personales.'
-            }
-        ],
-        events: [
-            {
-                title: 'Ponencia',
-                description: 'Presentó el trabajo “Percepción de la inteligencia artificial ChatGPT entre estudiantes de química: un estudio exploratorio” en el 3er Congreso Internacional SPIUJAT, enfocado en tecnologías innovadoras y perspectivas de la inteligencia artificial.'
-            },
-            {
-                title: 'Hackaton',
-                description: 'Participó en el Hackathon organizado por la Asociación Mexicana de Empresas de Hidrocarburos.'
-            },
-            {
-                title: 'Huawei ICT Competition 2023-2024',
-                description: 'Finalista en la etapa nacional del Computing Track de la competencia.'
-            },
-            {
-                title: 'Premio cultural',
-                description: 'Obtuvo el primer lugar en el concurso “I love you - Acrostic” organizado por el CELE Chontalpa, Sede 02.'
-            }
-        ]
-    },
+    // {
+    //     image: 'paola.webp',
+    //     name: 'Ashairy Paola Bolívar Zamudio',
+    //     rol: 'Desarrolladora Frontend y Analista de Datos.',
+    //     experience: '2 años de experiencia.',
+    //     about: 'Ashairy es estudiante de la Licenciatura en Ciencias Computacionales en la UJAT. Con un profundo interés en las nuevas tecnologías, su enfoque se centra en áreas como la inteligencia artificial, la programación y el desarrollo de software. Considera que su carrera le ofrece un campo lleno de desafíos que la motivan a aprender y avanzar profesionalmente.',
+    //     starred_experience: [
+    //         {
+    //             title: 'Desarrollo de Modelos Químicos',
+    //             description: 'Trabajó en el desarrollo de modelos de estructuras químicas utilizando tecnologías de diseño y fabricación asistida por computadora (CAD/CAM) con Fusion 360 de Autodesk, bajo la supervisión de la M.T. María Hortensia Almaguer Cantú.'
+    //         },
+    //         {
+    //             title: 'Base de Datos y Desarrollo de Software',
+    //             description: 'Colaboró en el desarrollo de una base de datos en SQL Server y en un programa en C# para el control, seguimiento y gestión de permisos, en conjunto con el Lic. Alejandro Rueda.'
+    //         }
+    //     ],
+    //     skills: [
+    //         {
+    //             title: 'Programación',
+    //             description: 'Conocimiento en lenguajes y tecnologías para el desarrollo de software.'
+    //         },
+    //         {
+    //             title: 'Modelación y CAD/CAM',
+    //             description: 'Dominio en herramientas como Fusion 360.'
+    //         },
+    //         {
+    //             title: 'Edición de videos',
+    //             description: 'Competencia en software de edición para proyectos académicos y personales.'
+    //         }
+    //     ],
+    //     events: [
+    //         {
+    //             title: 'Ponencia',
+    //             description: 'Presentó el trabajo “Percepción de la inteligencia artificial ChatGPT entre estudiantes de química: un estudio exploratorio” en el 3er Congreso Internacional SPIUJAT, enfocado en tecnologías innovadoras y perspectivas de la inteligencia artificial.'
+    //         },
+    //         {
+    //             title: 'Hackaton',
+    //             description: 'Participó en el Hackathon organizado por la Asociación Mexicana de Empresas de Hidrocarburos.'
+    //         },
+    //         {
+    //             title: 'Huawei ICT Competition 2023-2024',
+    //             description: 'Finalista en la etapa nacional del Computing Track de la competencia.'
+    //         },
+    //         {
+    //             title: 'Premio cultural',
+    //             description: 'Obtuvo el primer lugar en el concurso “I love you - Acrostic” organizado por el CELE Chontalpa, Sede 02.'
+    //         }
+    //     ]
+    // },
     {
         image: 'jorge.webp',
         name: 'Jorge Enrique Jiménez Moreno',
