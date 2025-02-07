@@ -42,7 +42,7 @@ const image = "https://landing-teyu.vercel.app/teyu-logo.png";
 
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="relative">
 		<canvas id="nokey" class="fixed -z-10 inset-0 w-full h-dvh bg-[#191919]"
 		></canvas>
 		<slot />
@@ -59,4 +59,3 @@ const image = "https://landing-teyu.vercel.app/teyu-logo.png";
 </style>
 
 <script is:inline src="/js/particles.min.js" defer></script>
-<!-- <script src="../utils/form.ts"></script> -->
